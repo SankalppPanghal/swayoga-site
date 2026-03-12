@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO Optimization -->
+    <title>Isha Classical Hatha Yoga Classes in Dublin, Ireland | SwaYoga</title>
+    <meta name="description" content="Learn authentic Isha Classical Hatha Yoga in Dublin, Ireland. Certified teacher Sankalp offers Surya Kriya, Angamardana, Yogasanas, and more. Group and private classes available.">
+    <meta name="keywords" content="Isha Yoga Ireland, Hatha Yoga Dublin, Yoga Classes Dublin, Surya Kriya Ireland, Angamardana Dublin, Yogasanas, Sadhguru Ireland, SwaYoga, Classical Hatha Yoga">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400..900;1,400..900&family=Inter:wght@300;400;500&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        h1, h2, h3 {
+            font-family: 'Bodoni Moda', serif;
+        }
+        .bg-sage { background-color: #e2e8e4; }
+        .text-sage { color: #5d6d5f; }
+        .btn-sage { background-color: #5d6d5f; color: white; }
+        .btn-sage:hover { background-color: #4a574b; }
+        
+        .fade-in {
+            animation: fadeIn 1.5s ease-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .hero-section {
+            background-color: #ffffff; 
+        }
+        .hero-bg-img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 0;
+            opacity: 0.95;
+            filter: brightness(0.85) contrast(1.0);
+        }
+        .hero-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,0.25));
+            z-index: 1;
+        }
+        .hero-content {
+            position: relative;
+            z-index: 10;
+        }
+        
+        /* Video Aspect Ratio Container */
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            background: #000;
+        }
+        .video-container video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body class="bg-stone-50 text-stone-800">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-white/80 backdrop-blur-md border-b border-stone-200">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold tracking-tighter text-sage uppercase text-nowrap">SwaYoga</div>
+            <div class="hidden md:flex space-x-8 text-sm uppercase tracking-widest font-medium items-center">
+                <a href="#about" class="hover:text-sage transition-colors">How it works</a>
+                <a href="#philosophy" class="hover:text-sage transition-colors">Philosophy</a>
+                <a href="#classes" class="hover:text-sage transition-colors">Classes</a>
+                <a href="#register" class="hover:text-sage transition-colors">Register</a>
+                <a href="https://www.instagram.com/hatayoga_sankalp/" target="_blank" rel="noopener noreferrer" class="hover:text-sage transition-colors text-lg" title="Follow us on Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </div>
+            <button class="md:hidden text-2xl" onclick="toggleMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-stone-200 px-6 py-4 space-y-4">
+            <a href="#about" class="block text-sm uppercase tracking-widest">How it works</a>
+            <a href="#philosophy" class="block text-sm uppercase tracking-widest">Philosophy</a>
+            <a href="#classes" class="block text-sm uppercase tracking-widest">Classes</a>
+            <a href="#register" class="block text-sm uppercase tracking-widest">Register</a>
+            <a href="https://www.instagram.com/hatayoga_sankalp/" target="_blank" rel="noopener noreferrer" class="block text-sm uppercase tracking-widest text-sage">
+                <i class="fa-brands fa-instagram mr-2"></i>Instagram
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative h-screen flex items-center justify-center overflow-hidden hero-section">
+        <img src="hero1.jpg" 
+             alt="Isha Classical Hatha Yoga Classes in Dublin, Ireland" 
+             class="hero-bg-img"
+             onerror="this.src='https://images.unsplash.com/photo-1545389336-cf09bd8268ef?q=80&w=2000&auto=format&fit=crop'">
+        <div class="hero-overlay"></div>
+        
+        <div class="hero-content text-center px-6 max-w-3xl fade-in w-full">
+            <!-- Frosted Glass Container for Quote Visibility -->
+            <div class="bg-white/40 backdrop-blur-sm p-8 md:p-12 rounded-[2.5rem] border border-white/50 shadow-sm mb-12">
+                <h1 class="text-xs md:text-sm font-bold tracking-[0.15em] uppercase text-stone-800 mb-6 pb-4 border-b border-stone-800/10 inline-block">
+                    Isha Classical Hatha Yoga • Dublin, Ireland
+                </h1>
+                <p class="text-2xl md:text-3xl lg:text-4xl mb-6 font-light italic leading-relaxed text-stone-900">
+                    "Hatha yoga is not body-bending business. It is about taking charge of the way you think, feel, and perceive life."
+                </p>
+                <div class="flex flex-col items-center">
+                    <div class="w-12 h-px bg-sage mb-4"></div>
+                    <p class="font-bold tracking-widest uppercase text-[10px] md:text-xs text-stone-600">— Sadhguru</p>
+                </div>
+            </div>
+            
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#classes" class="btn-sage px-8 py-3 rounded-full text-[10px] tracking-widest uppercase font-semibold transition-all shadow-lg hover:shadow-xl">
+                    Our Classes
+                </a>
+                <a href="#register" class="bg-white/80 backdrop-blur-md border border-stone-200 text-stone-800 px-8 py-3 rounded-full text-[10px] tracking-widest uppercase font-semibold hover:bg-stone-800 hover:text-white transition-all shadow-lg">
+                    Contact Teacher
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Philosophy Section -->
+    <section id="philosophy" class="py-24 bg-stone-100">
+        <div class="max-w-5xl mx-auto px-6 text-center">
+            <div class="mb-12">
+                <span class="text-sage font-bold tracking-widest uppercase text-xs">Wisdom from the Tradition</span>
+                <h2 class="text-4xl md:text-5xl mt-4">Why Classical Hatha Yoga?</h2>
+            </div>
+            
+            <div class="relative bg-white p-12 md:p-16 rounded-[3rem] shadow-sm overflow-hidden">
+                <div class="absolute top-10 left-10 text-6xl text-sage/20 font-serif">"</div>
+                <blockquote class="text-lg md:text-xl font-light italic text-stone-700 leading-relaxed mb-12 px-4">
+                    We want to bring back classical yoga in its purest form—not studio yoga, not book yoga, not the kind of things that are being done in the world—but proper classical yoga, which is a phenomenally powerful science.
+                    <div class="mt-4 font-bold tracking-widest uppercase text-xs not-italic text-stone-900">— Sadhguru</div>
+                </blockquote>
+
+                <div class="max-w-3xl mx-auto rounded-2xl overflow-hidden shadow-2xl">
+                    <div class="video-container">
+                        <!-- Local Video Workaround for Error 153 -->
+                        <video controls class="rounded-xl">
+                            <source src="philosophy_video.mp4" type="video/mp4">
+                            Your browser does not support the video tag. Please ensure 'philosophy_video.mp4' is in the same folder as this HTML file.
+                        </video>
+                    </div>
+                </div>
+                <p class="mt-6 text-xs text-stone-400">
+                    Video issues? <a href="https://youtu.be/UIK3hR-NjYU" target="_blank" class="text-sage underline">Watch directly on YouTube</a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- How it Works Section -->
+    <section id="about" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl mb-4">How it works</h2>
+                <div class="w-24 h-px bg-sage mx-auto"></div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-12 relative">
+                <div class="text-center relative">
+                    <h3 class="text-2xl mb-4">Learn the practice</h3>
+                    <p class="text-stone-500 leading-relaxed">Attend or book a program and learn the practice. Once you complete the program, you will be able to do the practice on your own. Post-program support is also available.</p>
+                </div>
+                <div class="text-center relative">
+                    <h3 class="text-2xl mb-4">Practice at home</h3>
+                    <p class="text-stone-500 leading-relaxed">At home, you can do the practice by yourself and incorporate it into your daily life. This gives you the convenience of practicing where and when you want.</p>
+                </div>
+                <div class="text-center relative">
+                    <h3 class="text-2xl mb-4">Attend a review session</h3>
+                    <p class="text-stone-500 leading-relaxed">After some time, if you wish to deepen your practice or receive corrections, you can attend a review session.</p>
+                </div>
+            </div>
+
+            <div class="mt-16 max-w-3xl mx-auto bg-stone-50 p-8 md:p-10 rounded-3xl border border-stone-100 text-center shadow-sm">
+                <i class="fa-solid fa-seedling text-sage mb-4 text-2xl"></i>
+                <p class="text-stone-600 font-medium leading-relaxed text-lg">
+                    After you have learnt the practice, we can have guided sessions for your practice to support your practice.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Practices Section -->
+    <section id="classes" class="py-24 bg-stone-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl mb-4 text-stone-900">Our Practices</h2>
+                <div class="w-24 h-px bg-sage mx-auto"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Upa-Yoga -->
+                <div class="flex flex-col h-full bg-white rounded-2xl overflow-hidden shadow-sm border border-stone-100 hover:shadow-lg transition-all duration-300 group">
+                    <div class="h-64 shrink-0 overflow-hidden">
+                        <img src="upayoga_promo.jpg" onerror="this.src='https://images.unsplash.com/photo-1593811167562-9cef47bfc4d7?auto=format&fit=crop&q=80&w=800'" class="w-full h-full object-cover object-right transition-transform duration-700 group-hover:scale-105" alt="Isha Upa-Yoga Practice Dublin">
+                    </div>
+                    <div class="p-8 flex flex-col h-[calc(100%-16rem)] flex-grow">
+                        <div class="flex justify-between items-start mb-3">
+                            <h3 class="text-2xl group-hover:text-sage transition-colors">Upa-Yoga</h3>
+                            <a href="https://www.youtube.com/watch?v=ANgjp7qy9HA" target="_blank" class="text-red-600 hover:text-red-700 transition-colors text-2xl" title="Watch Practice Video">
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
+                        </div>
+                        <div class="flex-grow flex flex-col mb-6">
+                            <p class="text-stone-500 mb-4 text-sm leading-relaxed">
+                                Upa-yoga is a simple yet powerful system of exercise that activates the joints, muscles, and energy system, bringing ease to the whole body.
+                            </p>
+                            <details class="group [&::-webkit-details-marker]:hidden mt-auto pt-2">
+                                <summary class="text-[10px] font-bold text-stone-400 uppercase tracking-widest cursor-pointer list-none flex items-center hover:text-sage transition-colors">
+                                    <span class="border-b border-dotted border-stone-300">View Practice Benefits</span>
+                                    <i class="fa-solid fa-chevron-down ml-2 text-sage transition-transform duration-300 group-open:rotate-180"></i>
+                                </summary>
+                                <ul class="mt-4 space-y-2 text-sm text-stone-600">
+                                    <li class="flex items-start"><i class="fa-solid fa-check text-sage mt-1 mr-2 text-[10px]"></i><span>Activates the joints, muscles, and energy system</span></li>
+                                    <li class="flex items-start"><i class="fa-solid fa-check text-sage mt-1 mr-2 text-[10px]"></i><span>Dispels inertia in the body’s energy</span></li>
+                                    <li class="flex items-start"><i class="fa-solid fa-check text-sage mt-1 mr-2 text-[10px]"></i><span>Relieves physical stress and tiredness</span></li>
+                                    <li class="flex items-start"><i class="fa-solid fa-check text-sage mt-1 mr-2 text-[10px]"></i><span>Prepares the body for further yoga practices</span></li>
+                                </ul>
+                            </details>
+                        </div>
+                        <!-- Pricing Badges -->
+                        <div class="mt-auto pt-5 border-t border-stone-100 flex flex-col gap-2.5">
+                            <div class="flex justify-between items-center bg-stone-50 border border-stone-200 rounded-xl py-2 px-4 shadow-sm">
+                                <span class="text-[10px] sm:text-xs font-bold text-stone-500 uppercase tracking-widest">Program</span>
+                                <span class="text-sm font-extrabold text-stone-700">€100</span>
+                            </div>
+                            <div class="flex justify-between items-center bg-stone-50 border border-stone-200 rounded-xl py-2 px-4 shadow-sm">
+                                <span class="text-[10px] font-semibold text-stone-500 uppercase tracking-widest">Guided Session</span>
+                                <span class="text-xs font-bold text-stone-700">€30</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Angamardana -->
+                <div class="flex flex-col h-full bg-white rounded-2xl overflow-hidden shadow-sm border border-stone-100 hover:shadow-lg transition-all duration-300 group">
+                    <div class="h-64 shrink-0 overflow-hidden">
+                        <img src="angamardna promp.jpg" onerror="this.src='https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&q=80&w=800'" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" alt="Isha Angamardana Dublin">
+                    </div>
+                    <div class="p-8 flex flex-col h-[calc(100%-16rem)] flex-grow">
+                        <div class="flex justify-between items-start mb-3">
+                            <h3 class="text-2xl group-hover:text-sage transition-colors">Angamardana</h3>
+                            <a href="https://www.youtube.com/watch?v=9aAzFTQOJJU" target="_blank" class="text-red-600 hover:text-red-700 transition-colors text-2xl" title="Watch Practice Video">
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
+                        </div>
+                        <div class="flex-grow flex flex-col mb-6">
+                            <p class="text-stone-500 mb-4 text-sm leading-relaxed">
+                                Angamardana is a system rooted in yoga that offers everyone the opportunity to invigorate the body and to reach peak physical and mental health. 
+                            </p>
+                            <details class="group [&::-webkit-details-marker]:hidden mt-auto pt-2">
+                                <summary class="text-[10px] font-bold text-stone-400 uppercase tracking-widest cursor-pointer list-none flex items-center hover:text-sage transition-colors">
+                                    <span class="border-b border-dotted border-stone-300">View Practice Benefits</span>
+                                    <i class="fa-solid fa-chevron-down ml-2 text-sage transition-transform duration-300 group-open:rotate-180"></i>
+                                </summary>
+                                <ul class="mt-4 space-y-2 text-sm text-stone-600">
+                                    <li class="flex items-start"><i class="fa-solid fa-check text-sage mt-1 mr-2 text-[10px]"></i><span>Strengthens the spine, skeletal and muscular systems</span></li>
+                                    <li class="flex items-start"><i class="fa-solid fa-check text-sage mt-1 mr-2 text-[10px]"></i><span>Builds physical strength, fitness and tenacity</span></li>
+                                    <li class="flex items-start"><i class="fa-solid fa-check text-sage mt-1 mr-2 text-[10px]"></i><span>Revitalizes the body and helps in weight-loss</span></li>
+                                    <li class="flex items-start"><i class="fa-solid fa-check text-sage mt-1 mr-2 text-[10px]"></i><span>Prepares the body for Hatha Yoga</span></li>
+                                </ul>
+                            </details>
+                        </div>
+                        <!-- Pricing Badges -->
+                        <div class="mt-auto pt-5 border-t border-stone-100 flex flex-col gap-2.5">
+                            <div class="flex justify-between items-center bg-stone-50 border border-stone-200 rounded-xl py-2 px-4 shadow-sm">
+                                <span class="text-[10px] sm:text-xs font-bold text-stone-500 uppercase tracking-widest">Program</span>
+                                <span class="text-sm font-extrabold text-stone-700">€275</span>
+                            </div>
+                            <div class="flex justify-between items-center bg-stone-50 border border-stone-200 rounded-xl py-2 px-4 shadow-sm">
+                                <span class="text-[10px] font-semibold text-stone-500 uppercase tracking-widest">Guided Session</span>
+                                <span class="text-xs font-bold text-stone-700">€30</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Surya Shakti -->
+                <div class="flex flex-col h-full bg-white rounded-2xl overflow-hidden shadow-sm border border-stone-100 hover:shadow-lg transition-all duration-300 group">
+                    <div class="h-64 shrink-0 overflow-hidden">
+                        <img src="surya_shakti_promo.jpg" onerror="this.src='https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&q=80&w=800'" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" alt="Isha Surya Shakti Dublin">
+                    </div>
+                    <div class="p-8 flex flex-col h-[calc(100%-16rem)] flex-grow">
+                        <div class="flex justify-between items-start mb-3">
+                            <h3 class="text-2xl group-hover:text-sage transition-colors">Surya Shakti</h3>
+                            <a href="https://www.youtube.com/watch?v=OBds5NZ4PRs" target="_blank" class="text-red-600 hover:text-red-700 transition-colors text-2xl" title="Watch Practice Video">
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
+                        </div>
+                        <div class="flex-grow flex flex-col mb-6">
+                            <p class="text-stone-500 mb-4 text-sm leading-relaxed">
+                                "Surya" means "Sun," and "Shakti" means "energy". It is a dynamic form of the Sun Salutation designed to build the physical body and strengthen sinews.
+                            </p>
+                            <details class="group [&::-webkit-details-marker]:hidden mt-auto pt-2">
+                                <summary class="text-[10px] font-bold text-stone-400 uppercase tracking-widest cursor-pointer list-none flex items-center hover:text-sage transition-colors">
+                                    <span class="border-b border-dotted border-stone-300">View Practice Benefits</span>
+                                    <i class="fa-solid fa-chevron-down ml-2 text-sage transition-transform duration-300 group-open:rotate-180"></i>
+                                </summary>
+                                <ul class="mt-4 space-y-2 text-sm text-stone-600">
+                                    <li class="flex items-start"><i class="fa-solid fa-check text-sage mt-1 mr-2 text-[10px]"></i><span>Brings about physical fitness and overall wellbeing</span></li>
+                                    <li class="flex items-start"><i class="fa-solid fa-check text-sage mt-1 mr-2 text-[10px]"></i><span>Increases physical strength, stamina and energy levels</span></li>
+                                    <li class="flex items-start"><i class="fa-solid fa-check text-sage mt-1 mr-2 text-[10px]"></i><span>Increases mental alertness and focus</span></li>
+                                    <li class="flex items-start"><i class="fa-solid fa-check text-sage mt-1 mr-2 text-[10px]"></i><span>Realigns the musculo-skeletal system</span></li>
+                                </ul>
+                            </details>
+                        </div>
+                        <!-- Pricing Badges -->
+                        <div class="mt-auto pt-5 border-t border-stone-100 flex flex-col gap-2.5">
+                            <div class="flex justify-between items-center bg-stone-50 border border-stone-200 rounded-xl py-2 px-4 shadow-sm">
+                                <span class="text-[10px] sm:text-xs font-bold text-stone-500 uppercase tracking-widest">Program</span>
+                                <span class="text-sm font-extrabold text-stone-700">€175</span>
+                            </div>
+                            <div class="flex justify-between items-center bg-stone-50 border border-stone-200 rounded-xl py-2 px-4 shadow-sm">
+                                <span class="text-[10px] font-semibold text-stone-500 uppercase tracking-widest">Guided Session</span>
+                                <span class="text-xs font-bold text-stone-700">€30</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Surya Kriya -->
+                <div class="flex flex-col h-full bg-white rounded-2xl overflow-hidden shadow-sm border border-stone-100 hover:shadow-lg transition-all duration-300 group">
+                    <div class="h-64 shrink-0 overflow-hidden">
+                        <img src="surya_kriya_promo.jpg" onerror="this.src='https://images.unsplash.com/photo-1510894347713-fc3ed6fdf539?auto=format&fit=crop&q=80&w=800'" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" alt="Isha Surya Kriya Ireland">
+                    </div>
+                    <div class="p-8 flex flex-col h-[calc(100%-16rem)] flex-grow">
+                        <div class="flex justify-between items-start mb-3">
+                            <h3 class="text-2xl group-hover:text-sage transition-colors">Surya Kriya</h3>
+                            <a href="https://www.youtube.com/watch?v=CKiQvH2Sumk" target="_blank" class="text-red-600 hover:text-red-700 transition-colors text-2xl" title="Watch Practice Video">
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
+                        </div>
+                        <div class="flex-grow flex flex-col mb-6">
+                            <p class="text-stone-500 mb-4 text-sm leading-relaxed">
+                                A potent 21-step yogic practice of tremendous antiquity, designed as a holistic process for health, wellness and complete inner wellbeing.
+                            </p>
+                            <details class="group [&::-webkit-details-marker]:hidden mt-auto pt-2">
+                                <summary class="text-[10px] font-bold text-stone-400 uppercase tracking-widest cursor-pointer list-none flex items-center hover:text-sage transition-colors">
+                                    <span class="border-b border-dotted border-stone-300">View Practice Benefits</span>
+                                    <i class="fa-solid fa-chevron-down ml-2 text-sage transition-transform duration-300 group-open:rotate-180"></i>
+                                </summary>
+                                <ul class="mt-4 space-y-2 text-sm text-stone-600">
+                                    <li class="flex items-start"><i class="fa-solid fa-check text-sage mt-1 mr-2 text-[10px]"></i><span>Develops mental clarity and focus</span></li>
+                                    <li class="flex items-start"><i class="fa-solid fa-check text-sage mt-1 mr-2 text-[10px]"></i><span>Balances the body, mind and energies</span></li>
+                                    <li class="flex items-start"><i class="fa-solid fa-check text-sage mt-1 mr-2 text-[10px]"></i><span>Rejuvenates all major organ systems</span></li>
+                                    <li class="flex items-start"><i class="fa-solid fa-check text-sage mt-1 mr-2 text-[10px]"></i><span>Supports one to become meditative</span></li>
+                                </ul>
+                            </details>
+                        </div>
+                        <!-- Pricing Badges -->
+                        <div class="mt-auto pt-5 border-t border-stone-100 flex flex-col gap-2.5">
+                            <div class="flex justify-between items-center bg-stone-50 border border-stone-200 rounded-xl py-2 px-4 shadow-sm">
+                                <span class="text-[10px] sm:text-xs font-bold text-stone-500 uppercase tracking-widest">Program</span>
+                                <span class="text-sm font-extrabold text-stone-700">€250</span>
+                            </div>
+                            <div class="flex justify-between items-center bg-stone-50 border border-stone-200 rounded-xl py-2 px-4 shadow-sm">
+                                <span class="text-[10px] font-semibold text-stone-500 uppercase tracking-widest">Guided Session</span>
+                                <span class="text-xs font-bold text-stone-700">€30</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Yogasanas -->
+                <div class="flex flex-col h-full bg-white rounded-2xl overflow-hidden shadow-sm border border-stone-100 hover:shadow-lg transition-all duration-300 group">
+                    <div class="h-64 shrink-0 overflow-hidden">
+                        <img src="yogasanas promo.jpg" onerror="this.src='https://images.unsplash.com/photo-1599447421416-3414500d18a5?auto=format&fit=crop&q=80&w=800'" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" alt="Isha Yogasanas Dublin">
+                    </div>
+                    <div class="p-8 flex flex-col h-[calc(100%-16rem)] flex-grow">
+                        <div class="flex justify-between items-start mb-3">
+                            <h3 class="text-2xl group-hover:text-sage transition-colors">Yogasanas</h3>
+                            <a href="https://www.youtube.com/watch?v=24KTmB_JXfg" target="_blank" class="text-red-600 hover:text-red-700 transition-colors text-2xl" title="Watch Practice Video">
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
+                        </div>
+                        <div class="flex-grow flex flex-col mb-6">
+                            <p class="text-stone-500 mb-4 text-sm leading-relaxed">
+                                Yogasanas are subtle physical processes to manipulate one’s energy to naturally achieve a chemistry of health, joy, blissfulness, and balance.
+                            </p>
+                            <details class="group [&::-webkit-details-marker]:hidden mt-auto pt-2">
+                                <summary class="text-[10px] font-bold text-stone-400 uppercase tracking-widest cursor-pointer list-none flex items-center hover:text-sage transition-colors">
+                                    <span class="border-b border-dotted border-stone-300">View Practice Benefits</span>
+                                    <i class="fa-solid fa-chevron-down ml-2 text-sage transition-transform duration-300 group-open:rotate-180"></i>
+                                </summary>
+                                <ul class="mt-4 space-y-2 text-sm text-stone-600">
+                                    <li class="flex items-start"><i class="fa-solid fa-check text-sage mt-1 mr-2 text-[10px]"></i><span>Relief of chronic health conditions</span></li>
+                                    <li class="flex items-start"><i class="fa-solid fa-check text-sage mt-1 mr-2 text-[10px]"></i><span>Evolution of body and mind towards a higher possibility</span></li>
+                                    <li class="flex items-start"><i class="fa-solid fa-check text-sage mt-1 mr-2 text-[10px]"></i><span>Stabilization of the body, mind and energy system</span></li>
+                                    <li class="flex items-start"><i class="fa-solid fa-check text-sage mt-1 mr-2 text-[10px]"></i><span>Deceleration of the aging process</span></li>
+                                </ul>
+                            </details>
+                        </div>
+                        <!-- Pricing Badges -->
+                        <div class="mt-auto pt-5 border-t border-stone-100 flex flex-col gap-2.5">
+                            <div class="flex justify-between items-center bg-stone-50 border border-stone-200 rounded-xl py-2 px-4 shadow-sm">
+                                <span class="text-[10px] sm:text-xs font-bold text-stone-500 uppercase tracking-widest">Program</span>
+                                <span class="text-sm font-extrabold text-stone-700">€300</span>
+                            </div>
+                            <div class="flex justify-between items-center bg-stone-50 border border-stone-200 rounded-xl py-2 px-4 shadow-sm">
+                                <span class="text-[10px] font-semibold text-stone-500 uppercase tracking-widest">Guided Session</span>
+                                <span class="text-xs font-bold text-stone-700">€30</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Other -->
+                <div class="flex flex-col h-full bg-white rounded-2xl overflow-hidden shadow-sm border border-stone-100 hover:shadow-lg transition-all duration-300 group">
+                    <div class="h-64 shrink-0 overflow-hidden">
+                        <img src="other_promo.jpg" onerror="this.src='https://images.unsplash.com/photo-1599447421416-3414500d18a5?auto=format&fit=crop&q=80&w=800'" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" alt="Other Isha Yoga Classes Dublin Ireland">
+                    </div>
+                    <div class="p-8 flex flex-col h-[calc(100%-16rem)] flex-grow">
+                        <div class="flex justify-between items-start mb-3">
+                            <h3 class="text-2xl group-hover:text-sage transition-colors">Other</h3>
+                        </div>
+                        <div class="flex-grow flex flex-col mb-6">
+                            <p class="text-stone-500 mb-4 text-sm leading-relaxed">
+                                We also offer customized sessions and shorter practices for complete wellbeing, including Bhuta Shuddhi, Jala Neti, Nadi Shuddhi, and corporate sessions.
+                            </p>
+                            <details class="group [&::-webkit-details-marker]:hidden mt-auto pt-2">
+                                <summary class="text-[10px] font-bold text-stone-400 uppercase tracking-widest cursor-pointer list-none flex items-center hover:text-sage transition-colors">
+                                    <span class="border-b border-dotted border-stone-300">View Details</span>
+                                    <i class="fa-solid fa-chevron-down ml-2 text-sage transition-transform duration-300 group-open:rotate-180"></i>
+                                </summary>
+                                <ul class="mt-4 space-y-2 text-sm text-stone-600">
+                                    <li class="flex items-start"><i class="fa-solid fa-check text-sage mt-1 mr-2 text-[10px]"></i><span>Tailored for your specific lifestyle needs</span></li>
+                                    <li class="flex items-start"><i class="fa-solid fa-check text-sage mt-1 mr-2 text-[10px]"></i><span>Purifies the elements within the human system</span></li>
+                                    <li class="flex items-start"><i class="fa-solid fa-check text-sage mt-1 mr-2 text-[10px]"></i><span>Enhances respiratory health and mental balance</span></li>
+                                    <li class="flex items-start"><i class="fa-solid fa-check text-sage mt-1 mr-2 text-[10px]"></i><span>Convenient formats for busy schedules</span></li>
+                                </ul>
+                            </details>
+                        </div>
+                        <!-- Pricing Badges -->
+                        <div class="mt-auto pt-5 border-t border-stone-100 flex flex-col gap-2.5">
+                            <div class="flex justify-between items-center bg-stone-50 border border-stone-200 rounded-xl py-2.5 px-4 shadow-sm">
+                                <span class="text-[10px] sm:text-xs font-bold text-stone-500 uppercase tracking-widest">Program</span>
+                                <span class="text-sm font-extrabold text-stone-700">Custom</span>
+                            </div>
+                            <div class="flex justify-between items-center bg-stone-50 border border-stone-200 rounded-xl py-2 px-4 shadow-sm">
+                                <span class="text-[10px] font-semibold text-stone-500 uppercase tracking-widest">Guided Session</span>
+                                <span class="text-xs font-bold text-stone-700">€30</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How to Register Section -->
+    <section id="register" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <div class="mb-16">
+                <span class="text-sage font-bold tracking-widest uppercase text-xs">Join a Program</span>
+                <h2 class="text-4xl md:text-5xl mt-4 mb-4 font-light text-stone-900">How to Register</h2>
+                <div class="w-24 h-px bg-sage mx-auto"></div>
+                <p class="mt-6 text-stone-500 max-w-2xl mx-auto leading-relaxed">
+                    Ready to begin your journey of self-transformation? Choose the method that works best for you.
+                </p>
+
+                <!-- Flexible Locations Info Box -->
+                <div class="mt-10 bg-sage/5 border border-sage/20 rounded-3xl p-6 md:p-8 max-w-3xl mx-auto text-left flex flex-col md:flex-row items-start md:items-center space-y-4 md:space-y-0 md:space-x-6 shadow-sm">
+                    <div class="w-14 h-14 shrink-0 bg-white rounded-2xl flex items-center justify-center text-sage text-2xl shadow-sm border border-stone-100">
+                        <i class="fa-solid fa-map-location-dot"></i>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-semibold text-stone-800 mb-1">Enquire & Arrange a Session</h4>
+                        <p class="text-stone-600 text-sm leading-relaxed">
+                            Get in touch to enquire about practices, confirm availability, and schedule a class at a time that works for you. 
+                            Sessions can be held at <strong>your own place</strong> or at <strong>my space in Dublin</strong> for the exact same price.
+                            <span class="block mt-2 text-stone-400 italic text-xs font-medium">*Note: For sessions outside of Dublin, teacher travel costs will apply.</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- WhatsApp -->
+                <div class="bg-stone-50 p-10 rounded-[2rem] border border-stone-100 shadow-sm flex flex-col items-center group transition-all hover:bg-white hover:shadow-xl">
+                    <div class="w-16 h-16 bg-green-100 text-green-600 rounded-2xl flex items-center justify-center text-3xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </div>
+                    <h3 class="text-2xl mb-4 font-medium">WhatsApp</h3>
+                    <p class="text-stone-500 mb-8 flex-grow leading-relaxed text-sm">
+                        Quick inquiries and schedule updates. Message directly to start the process.
+                    </p>
+                    <a href="https://wa.me/353833103345" target="_blank" class="w-full py-4 bg-green-600 text-white rounded-full font-bold uppercase tracking-widest text-[10px] hover:bg-green-700 transition-colors flex items-center justify-center space-x-2 shadow-md">
+                        <i class="fa-brands fa-whatsapp text-sm"></i>
+                        <span>Message on WhatsApp</span>
+                    </a>
+                </div>
+
+                <!-- Phone -->
+                <div class="bg-stone-50 p-10 rounded-[2rem] border border-stone-100 shadow-sm flex flex-col items-center group transition-all hover:bg-white hover:shadow-xl">
+                    <div class="w-16 h-16 bg-sage/10 text-sage rounded-2xl flex items-center justify-center text-3xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <h3 class="text-2xl mb-4 font-medium">Call Us</h3>
+                    <p class="text-stone-500 mb-8 flex-grow leading-relaxed text-sm">
+                        Prefer a conversation? Call us to discuss which practice is right for you.
+                    </p>
+                    <a href="tel:+353833103345" class="w-full py-4 btn-sage rounded-full font-bold uppercase tracking-widest text-[10px] transition-all flex items-center justify-center space-x-2 shadow-md">
+                        <i class="fa-solid fa-phone text-sm"></i>
+                        <span>Call Us Now</span>
+                    </a>
+                </div>
+
+                <!-- Email -->
+                <div class="bg-stone-50 p-10 rounded-[2rem] border border-stone-100 shadow-sm flex flex-col items-center group transition-all hover:bg-white hover:shadow-xl">
+                    <div class="w-16 h-16 bg-blue-100 text-blue-600 rounded-2xl flex items-center justify-center text-3xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <h3 class="text-2xl mb-4 font-medium">Email</h3>
+                    <p class="text-stone-500 mb-8 flex-grow leading-relaxed text-sm">
+                        For formal inquiries or detailed registration support.
+                    </p>
+                    <a href="mailto:panghalsankalp@gmail.com" class="w-full py-4 bg-stone-800 text-white rounded-full font-bold uppercase tracking-widest text-[10px] hover:bg-stone-900 transition-colors flex items-center justify-center space-x-2 shadow-md">
+                        <i class="fa-solid fa-paper-plane text-sm"></i>
+                        <span>Send an Email</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About the Teacher Section -->
+    <section id="teacher" class="py-24 bg-sage/10 relative overflow-hidden">
+        <div class="absolute -top-24 -right-24 w-96 h-96 bg-sage/20 rounded-full blur-3xl"></div>
+        <div class="max-w-7xl mx-auto px-6 relative z-10">
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div class="order-2 md:order-1">
+                    <span class="text-sage font-bold tracking-widest uppercase text-xs">Meet Your Instructor</span>
+                    <h2 class="text-4xl md:text-5xl mt-4 mb-8 text-stone-900">About the Teacher</h2>
+                    <div class="space-y-6 text-stone-600 leading-relaxed text-lg font-light">
+                        <p>
+                            Hi, my name is Sankalp. Since childhood, I naturally possessed a deep longing to experience higher dimensions of energy. In my early twenties, I tried various tools to explore this—learning yoga through books and videos—but the moment I stumbled upon the practices offered by Isha, I knew there was no looking back or searching elsewhere.
+                        </p>
+                        <p>
+                            In March 2018, while in my 3rd year at Trinity College Dublin, I attended the Inner Engineering program in Dublin and had a profoundly transformative experience. This inspired me to learn furthur Isha practices and I learnt Classical Hatha Yoga from a local teacher. 
+                        </p>
+                        <p>
+                            I completed the rigorous Teacher Training Program at the Isha Yoga Center in India and became a Classical Hatha Yoga teacher, officially certified by Sadhguru Gurukulam, in December 2025.
+                        </p>
+                        <p>
+                            After six years of dedicated daily practice, I am deeply moved to contribute to Sadhguru’s vision of global well-being by offering these transformative tools to the world.
+                        </p>
+                    </div>
+
+                    <!-- Certification Logo -->
+                    <div class="mt-8 mb-2">
+                        <img src="certified_teacher_logo.jpeg" 
+                             alt="Sadhguru Gurukulam Certified Yoga Teacher Logo Ireland" 
+                             class="h-16 md:h-20 w-auto object-contain mix-blend-multiply">
+                    </div>
+
+                    <div class="mt-6">
+                        <a href="https://isha.sadhguru.org/yoga/yoga-teacher-training/hatha-yoga-teacher-training/" 
+                           target="_blank" rel="noopener noreferrer"
+                           class="inline-flex items-center space-x-4 bg-white p-4 pr-6 rounded-2xl shadow-sm border border-stone-100 hover:shadow-md hover:border-sage/30 transition-all group">
+                            <div class="w-12 h-12 rounded-xl bg-sage/10 text-sage flex items-center justify-center text-xl group-hover:bg-sage group-hover:text-white transition-colors">
+                                <i class="fa-solid fa-graduation-cap"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium text-stone-800 text-sm tracking-wide">About Teacher Training Program</h4>
+                                <span class="text-xs text-stone-500 flex items-center mt-0.5 text-balance">Sadhguru Gurukulam <i class="fa-solid fa-arrow-up-right-from-square ml-1.5 text-[10px]"></i></span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="order-1 md:order-2 rounded-3xl overflow-hidden shadow-lg h-[400px] md:h-[600px] border-4 border-white">
+                    <img src="teacher.jpeg" 
+                         onerror="this.src='https://images.unsplash.com/photo-1599447421416-3414500d18a5?auto=format&fit=crop&q=80&w=800'"
+                         alt="Sankalp - Certified Isha Classical Hatha Yoga Teacher in Dublin, Ireland" class="w-full h-full object-cover object-top">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Sadhguru Section -->
+    <section id="sadhguru" class="py-24 bg-stone-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div class="rounded-3xl overflow-hidden shadow-md h-[400px] md:h-[600px]">
+                    <img src="SadhguruPromo.jpeg" 
+                         alt="Sadhguru - Founder of Isha Foundation" referrerpolicy="no-referrer"
+                         class="w-full h-full object-cover object-right"
+                         onerror="this.src='https://images.unsplash.com/photo-1609869532884-6385d43baea4?auto=format&fit=crop&w=800&q=80'">
+                </div>
+                <div class="pr-0 md:pr-8">
+                    <span class="text-sage font-bold tracking-widest uppercase text-xs">About</span>
+                    <h2 class="text-4xl md:text-5xl mt-4 mb-8 text-stone-900">Sadhguru</h2>
+                    <div class="space-y-6 text-stone-600 leading-relaxed font-light text-lg">
+                        <p>Sadhguru is a yogi and visionary. Named one of India’s 50 most influential people, Sadhguru’s work has touched the lives of millions worldwide through his transformational programs.</p>
+                        <p>Sadhguru established <strong class="font-medium text-stone-800">Isha Foundation</strong>, a non-profit, volunteer-run organisation operating in more than 300 centres. Find out more at <a href="https://isha.sadhguru.org" target="_blank" class="text-sage hover:underline">isha.sadhguru.org</a>.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="py-12 bg-stone-900 text-stone-400 text-center text-sm">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-white text-xl font-bold tracking-tighter mb-6 uppercase">SwaYoga</div>
+            <div class="flex justify-center mb-6">
+                <a href="https://www.instagram.com/hatayoga_sankalp/" target="_blank" rel="noopener noreferrer" class="text-2xl hover:text-white transition-colors" title="Follow Isha Yoga Ireland on Instagram"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            
+            <!-- Footer Certification Logo -->
+            <div class="flex justify-center mb-8">
+                <div class="bg-stone-50 py-3 px-4 rounded-xl shadow-lg inline-block">
+                    <img src="certified_teacher_logo.jpeg" alt="Certified Isha Hatha Yoga Teacher Dublin Ireland" class="h-10 md:h-12 w-auto object-contain">
+                </div>
+            </div>
+
+            <p class="mb-8 text-balance px-4">Dublin, Republic of Ireland • panghalsankalp@gmail.com</p>
+            <p>&copy; 2026 SwaYoga. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        }
+    </script>
+</body>
+</html>
