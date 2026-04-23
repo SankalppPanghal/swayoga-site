@@ -82,7 +82,7 @@
     <nav class="fixed w-full z-50 bg-white/80 backdrop-blur-md border-b border-stone-200">
         <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
             <div class="text-2xl font-bold tracking-tighter text-sage uppercase text-nowrap">SwaYoga</div>
-            <div class="hidden md:flex space-x-8 text-sm uppercase tracking-widest font-medium items-center">
+            <div class="hidden md:flex space-x-6 lg:space-x-8 text-xs lg:text-sm uppercase tracking-widest font-medium items-center">
                 <a href="#why-classical" class="hover:text-sage transition-colors">Why Classical</a>
                 <a href="#how-it-works" class="hover:text-sage transition-colors">How it Works</a>
                 <a href="#our-practices" class="hover:text-sage transition-colors">Our Practices</a>
@@ -1043,6 +1043,32 @@
         function prevPhilosophySlide() {
             currentPhilSlide = (currentPhilSlide - 1 + totalPhilSlides) % totalPhilSlides;
             updatePhilSlide();
+        }
+
+        // Swipe support for Philosophy Slider
+        const philSlider = document.getElementById('philosophy-slider');
+        let touchStartX = 0;
+        let touchEndX = 0;
+
+        philSlider.addEventListener('touchstart', e => {
+            touchStartX = e.changedTouches[0].screenX;
+        }, { passive: true });
+
+        philSlider.addEventListener('touchend', e => {
+            touchEndX = e.changedTouches[0].screenX;
+            handleSwipe();
+        }, { passive: true });
+
+        function handleSwipe() {
+            const swipeThreshold = 50; // Minimum distance (in px) to register a swipe
+            if (touchEndX < touchStartX - swipeThreshold) {
+                // Swiped Left - go to Next Slide
+                nextPhilosophySlide(); 
+            }
+            if (touchEndX > touchStartX + swipeThreshold) {
+                // Swiped Right - go to Previous Slide
+                prevPhilosophySlide(); 
+            }
         }
     </script>
 </body>
