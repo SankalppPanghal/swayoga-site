@@ -362,9 +362,9 @@
                     <div class="p-8 flex flex-col h-[calc(100%-16rem)] flex-grow">
                         <div class="flex justify-between items-start mb-3">
                             <h3 class="text-2xl group-hover:text-sage transition-colors">Upa-Yoga</h3>
-                            <a href="https://www.youtube.com/watch?v=ANgjp7qy9HA" target="_blank" class="text-red-600 hover:text-red-700 transition-colors text-2xl" title="Watch Practice Video">
+                            <button type="button" onclick="openVideoModal('ANgjp7qy9HA')" class="text-red-600 hover:text-red-700 transition-all text-2xl focus:outline-none hover:scale-110" title="Watch Practice Video">
                                 <i class="fa-brands fa-youtube"></i>
-                            </a>
+                            </button>
                         </div>
                         <div class="flex-grow flex flex-col mb-6">
                             <p class="text-stone-500 mb-4 text-sm leading-relaxed">
@@ -413,9 +413,9 @@
                     <div class="p-8 flex flex-col h-[calc(100%-16rem)] flex-grow">
                         <div class="flex justify-between items-start mb-3">
                             <h3 class="text-2xl group-hover:text-sage transition-colors">Angamardana</h3>
-                            <a href="https://www.youtube.com/watch?v=9aAzFTQOJJU" target="_blank" class="text-red-600 hover:text-red-700 transition-colors text-2xl" title="Watch Practice Video">
+                            <button type="button" onclick="openVideoModal('9aAzFTQOJJU')" class="text-red-600 hover:text-red-700 transition-all text-2xl focus:outline-none hover:scale-110" title="Watch Practice Video">
                                 <i class="fa-brands fa-youtube"></i>
-                            </a>
+                            </button>
                         </div>
                         <div class="flex-grow flex flex-col mb-6">
                             <p class="text-stone-500 mb-4 text-sm leading-relaxed">
@@ -464,9 +464,9 @@
                     <div class="p-8 flex flex-col h-[calc(100%-16rem)] flex-grow">
                         <div class="flex justify-between items-start mb-3">
                             <h3 class="text-2xl group-hover:text-sage transition-colors">Surya Shakti</h3>
-                            <a href="https://www.youtube.com/watch?v=OBds5NZ4PRs" target="_blank" class="text-red-600 hover:text-red-700 transition-colors text-2xl" title="Watch Practice Video">
+                            <button type="button" onclick="openVideoModal('OBds5NZ4PRs')" class="text-red-600 hover:text-red-700 transition-all text-2xl focus:outline-none hover:scale-110" title="Watch Practice Video">
                                 <i class="fa-brands fa-youtube"></i>
-                            </a>
+                            </button>
                         </div>
                         <div class="flex-grow flex flex-col mb-6">
                             <p class="text-stone-500 mb-4 text-sm leading-relaxed">
@@ -516,9 +516,9 @@
                     <div class="p-8 flex flex-col h-[calc(100%-16rem)] flex-grow">
                         <div class="flex justify-between items-start mb-3">
                             <h3 class="text-2xl group-hover:text-sage transition-colors">Surya Kriya</h3>
-                            <a href="https://www.youtube.com/watch?v=CKiQvH2Sumk" target="_blank" class="text-red-600 hover:text-red-700 transition-colors text-2xl" title="Watch Practice Video">
+                            <button type="button" onclick="openVideoModal('CKiQvH2Sumk')" class="text-red-600 hover:text-red-700 transition-all text-2xl focus:outline-none hover:scale-110" title="Watch Practice Video">
                                 <i class="fa-brands fa-youtube"></i>
-                            </a>
+                            </button>
                         </div>
                         <div class="flex-grow flex flex-col mb-6">
                             <p class="text-stone-500 mb-4 text-sm leading-relaxed">
@@ -570,9 +570,9 @@
                     <div class="p-8 flex flex-col h-[calc(100%-16rem)] flex-grow">
                         <div class="flex justify-between items-start mb-3">
                             <h3 class="text-2xl group-hover:text-sage transition-colors">Yogasanas</h3>
-                            <a href="https://www.youtube.com/watch?v=24KTmB_JXfg" target="_blank" class="text-red-600 hover:text-red-700 transition-colors text-2xl" title="Watch Practice Video">
+                            <button type="button" onclick="openVideoModal('24KTmB_JXfg')" class="text-red-600 hover:text-red-700 transition-all text-2xl focus:outline-none hover:scale-110" title="Watch Practice Video">
                                 <i class="fa-brands fa-youtube"></i>
-                            </a>
+                            </button>
                         </div>
                         <div class="flex-grow flex flex-col mb-6">
                             <p class="text-stone-500 mb-4 text-sm leading-relaxed">
@@ -1020,6 +1020,18 @@
         </div>
     </footer>
 
+    <!-- Video Modal Overlay -->
+    <div id="videoModal" class="fixed inset-0 z-[100] hidden bg-black/95 flex items-center justify-center opacity-0 transition-opacity duration-300 backdrop-blur-sm">
+        <button type="button" onclick="closeVideoModal()" class="absolute top-6 right-6 md:top-10 md:right-10 text-white/70 hover:text-white text-4xl transition-colors focus:outline-none z-50 cursor-pointer">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+        <div class="w-full max-w-5xl px-4 md:px-8 relative">
+            <div class="video-container rounded-2xl shadow-2xl overflow-hidden bg-black">
+                <iframe id="modalIframe" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
     <script>
         function toggleMenu() {
             const menu = document.getElementById('mobile-menu');
@@ -1070,6 +1082,41 @@
                 prevPhilosophySlide(); 
             }
         }
+
+        // Global Video Modal Logic
+        const videoModal = document.getElementById('videoModal');
+        const modalIframe = document.getElementById('modalIframe');
+
+        function openVideoModal(videoId) {
+            // Set the src with autoplay
+            modalIframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1`;
+            // Remove hidden class to display element
+            videoModal.classList.remove('hidden');
+            // Small delay to allow CSS transition to trigger
+            setTimeout(() => {
+                videoModal.classList.remove('opacity-0');
+            }, 10);
+            // Prevent body scrolling
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeVideoModal() {
+            // Start fade out
+            videoModal.classList.add('opacity-0');
+            // Wait for fade out to finish before hiding and clearing src
+            setTimeout(() => {
+                videoModal.classList.add('hidden');
+                modalIframe.src = ''; // Stops the video completely
+                document.body.style.overflow = 'auto'; // Restore scrolling
+            }, 300);
+        }
+
+        // Close modal if clicking outside the video (on the background)
+        videoModal.addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeVideoModal();
+            }
+        });
     </script>
 </body>
 </html>
