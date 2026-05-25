@@ -74,6 +74,19 @@
             width: 100%;
             height: 100%;
         }
+        
+        /* Custom Scrollbar for inner lists */
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 4px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: #f5f5f4; 
+            border-radius: 4px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #d6d3d1; 
+            border-radius: 4px;
+        }
     </style>
 </head>
 <body class="bg-stone-50 text-stone-800">
@@ -655,6 +668,57 @@
                             </details>
                         </div>
                         <!-- Pricing Badges -->
+                        <div class="mt-auto pt-5 border-t border-stone-100">
+                            <div class="flex justify-between items-center bg-stone-50 border border-stone-200 rounded-xl py-3 px-5 shadow-sm">
+                                <span class="text-[10px] sm:text-xs font-bold text-stone-500 uppercase tracking-widest">Program Fee</span>
+                                <span class="text-lg font-extrabold text-stone-700">Custom</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Treatment Modules -->
+                <div class="flex flex-col h-full bg-white rounded-2xl overflow-hidden shadow-sm border border-stone-100 hover:shadow-lg transition-all duration-300 group">
+                    <div class="h-64 shrink-0 overflow-hidden">
+                        <img src="therapy_promo.jpg" onerror="this.src='https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&q=80&w=800'" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" alt="Therapeutic Yoga Modules Dublin">
+                    </div>
+                    <div class="p-8 flex flex-col h-[calc(100%-16rem)] flex-grow">
+                        <div class="flex justify-between items-start mb-3">
+                            <h3 class="text-2xl group-hover:text-sage transition-colors">Treatment Modules</h3>
+                        </div>
+                        <div class="flex-grow flex flex-col mb-6">
+                            <p class="text-stone-500 mb-4 text-sm leading-relaxed">
+                                Our practices can help or support various chronic conditions. Message the teacher to consult the appropriate module for your specific health needs and goals.
+                            </p>
+                            <details class="group [&::-webkit-details-marker]:hidden mt-auto pt-2">
+                                <summary class="text-[10px] font-bold text-stone-400 uppercase tracking-widest cursor-pointer list-none flex items-center hover:text-sage transition-colors">
+                                    <span class="border-b border-dotted border-stone-300">View Conditions & Disclaimer</span>
+                                    <i class="fa-solid fa-chevron-down ml-2 text-sage transition-transform duration-300 group-open:rotate-180"></i>
+                                </summary>
+                                
+                                <div class="mt-4 mb-4 p-3 bg-red-50/80 rounded-xl border border-red-100 text-[10px] text-red-800 leading-relaxed font-medium">
+                                    <strong>Important:</strong> Always consult a doctor before reducing medication. These modules do not offer a definitive cure. For terminal illnesses (e.g., Cancer), these are strictly adjuvant treatments that may improve wellbeing but might not cure the disease.
+                                </div>
+
+                                <ul class="mt-2 space-y-1.5 text-xs text-stone-600 max-h-48 overflow-y-auto pr-2 custom-scrollbar">
+                                    <li class="flex items-start"><i class="fa-solid fa-check text-sage mt-1 mr-2 text-[8px]"></i><span>Asthma, Allergy & Sinusitis</span></li>
+                                    <li class="flex items-start"><i class="fa-solid fa-check text-sage mt-1 mr-2 text-[8px]"></i><span>Tinnitus & Vertigo</span></li>
+                                    <li class="flex items-start"><i class="fa-solid fa-check text-sage mt-1 mr-2 text-[8px]"></i><span>Diabetes & Hypertension</span></li>
+                                    <li class="flex items-start"><i class="fa-solid fa-check text-sage mt-1 mr-2 text-[8px]"></i><span>Cervical, Lumbar & Joint Problems</span></li>
+                                    <li class="flex items-start"><i class="fa-solid fa-check text-sage mt-1 mr-2 text-[8px]"></i><span>Hormonal Imbalance & Menstrual Problems</span></li>
+                                    <li class="flex items-start"><i class="fa-solid fa-check text-sage mt-1 mr-2 text-[8px]"></i><span>Skin Diseases</span></li>
+                                    <li class="flex items-start"><i class="fa-solid fa-check text-sage mt-1 mr-2 text-[8px]"></i><span>Incontinence</span></li>
+                                    <li class="flex items-start"><i class="fa-solid fa-check text-sage mt-1 mr-2 text-[8px]"></i><span>Insomnia & Obesity</span></li>
+                                    <li class="flex items-start"><i class="fa-solid fa-check text-sage mt-1 mr-2 text-[8px]"></i><span>Gastrointestinal (Gastritis, Heartburn, Bloating)</span></li>
+                                    <li class="flex items-start"><i class="fa-solid fa-check text-sage mt-1 mr-2 text-[8px]"></i><span>Pain Management & Addiction</span></li>
+                                    <li class="flex items-start"><i class="fa-solid fa-check text-sage mt-1 mr-2 text-[8px]"></i><span>Mental Imbalance (Depression, Psychosis)</span></li>
+                                    <li class="flex items-start"><i class="fa-solid fa-check text-sage mt-1 mr-2 text-[8px]"></i><span>Anxiety & PTSD</span></li>
+                                    <li class="flex items-start"><i class="fa-solid fa-check text-sage mt-1 mr-2 text-[8px]"></i><span>Nervous & Autoimmune Diseases</span></li>
+                                    <li class="flex items-start"><i class="fa-solid fa-check text-sage mt-1 mr-2 text-[8px]"></i><span>Reproductive Organ Related Diseases</span></li>
+                                    <li class="flex items-start"><i class="fa-solid fa-check text-sage mt-1 mr-2 text-[8px]"></i><span>Cancer (Adjuvant) & Cardiac Diseases</span></li>
+                                </ul>
+                            </details>
+                        </div>
                         <div class="mt-auto pt-5 border-t border-stone-100">
                             <div class="flex justify-between items-center bg-stone-50 border border-stone-200 rounded-xl py-3 px-5 shadow-sm">
                                 <span class="text-[10px] sm:text-xs font-bold text-stone-500 uppercase tracking-widest">Program Fee</span>
